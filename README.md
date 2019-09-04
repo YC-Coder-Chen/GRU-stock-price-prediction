@@ -1,5 +1,5 @@
 # GRU-stock-price-prediction
-============
+
 
 ![Final Prediction](/prediction.png)
 Welcome, this project proposes a new GRU framework for stock price prediction using MXNET and Python 3.6. Previous LSTM/GRU model can only take in previous stock price. But in fact, stock price changes are clearly not determined by previous stock price solely. So we created this new framework incorporated with a mechanism very similar to the attention mechanism to takes in other features (such as previous day's highest price changes/ volumes changes). We also incorporated a mechanism quite similar to the ResNet in computer vision industry into the model. For simplification, this code demo only uses time-series train/test split. After carefully tuning, this framework achieved a slightly better result than simply using the lag of stock price as the prediction. The reason behind this might be there isn't much information behind the static trading data. 
